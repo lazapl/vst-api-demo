@@ -145,7 +145,7 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 
 app.post('/upload', upload.single('file'), (req, res) => {
-  const fullUrl = `https://api-server-demo-14.onrender.com/uploads/${req.file.filename}`;
+  const fullUrl = `https://vst-api-demo-1.onrender.com/uploads/${req.file.filename}`;
   res.json({ url: fullUrl });
 })
 
