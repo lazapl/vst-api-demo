@@ -150,10 +150,10 @@ app.post('/upload', upload.single('file'), (req, res) => {
 })
 
 
-app.post('/uploadNewAvatar', upload.single('file'), (req, res)=> {
-  res.json({url: `https://vst-api-demo-1.onrender.com/uploads/${req.file.filename}`)}
+app.post('/uploadNewAvatar', upload.single('file'), (req, res) => {
+  
+  res.json({url: `https://vst-api-demo-1.onrender.com/uploads/${req.file.filename}`})
 })
-
 
 
 
