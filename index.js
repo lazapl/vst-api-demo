@@ -19,7 +19,7 @@ app.set("trust proxy", 1);
 
 
 app.use(cors({
-  origin: 'http://localhost:5173', // Zmień na odpowiedni adres frontendu
+  origin: 'https://vstindustries.netlify.app/',
   credentials: true
 }));
 
@@ -68,7 +68,7 @@ const server = http.createServer(app)
 
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:5173", // remove trailing slash
+    origin: "https://vstindustries.netlify.app/",
     methods: ["GET", "POST"],
     credentials: true
   }
